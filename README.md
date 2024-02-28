@@ -31,12 +31,11 @@ On the website there needed to be multiple elements implemented and displayed on
 - Using Flexbox or CSS Grid
 - Using LocalStorage
 
-
 ## Features
 
 ### Responsiveness
 
-To make the website responsive I use Flexbox, which was a very good solution. I prefer it over Grid.
+For the website to be compatible with every device I used Flexbox, which was a very good solution for me.
 
 By this feature the following requirements can be checked off the list:
 - [x] Using Flexbox or CSS Grid
