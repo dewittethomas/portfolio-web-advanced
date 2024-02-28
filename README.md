@@ -5,6 +5,8 @@ A Portfolio Website for my School Subject called "Web Advanced". Built with HTML
 ## Table of Contents
 - [Requirements](#requirements)
 - [Features](#features)
+    - [Responsiveness](#responsiveness)
+    - [Weather Station](#weather-station)
 
 ## Requirements
 
