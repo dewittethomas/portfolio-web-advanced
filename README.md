@@ -1,6 +1,6 @@
 # Portfolio Web Advanced
 
-A Portfolio Website for my School Subject called "Web Advanced". Built in HTML, CSS and JavaScript.
+A Portfolio Website for my School Subject called "Web Advanced". Built with HTML, CSS and JavaScript.
 
 ## Table of Contents
 - [Requirements](#requirements)
@@ -38,6 +38,7 @@ On the website there needed to be multiple elements implemented and displayed on
 For the website to be compatible with every device I used Flexbox, which was a very good solution for me.
 
 By this feature the following requirements can be checked off the list:
+
 - [x] Using Flexbox or CSS Grid
 
 ### Weather Station
