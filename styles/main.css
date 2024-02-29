@@ -19,20 +19,23 @@ header {
     color: var(--white);
     padding: 1rem 1rem 1rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    flex-wrap: wrap-reverse;
 }
 
 .left-side {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    order: 1;
 }
 
 .right-side {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    order: 2;
 }
 
 .left-side h1 {
@@ -48,4 +51,30 @@ header {
 
 img {
     width: 3rem;
+    height: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        background-color: var(--blue);
+        color: var(--white);
+        padding: 1rem 1rem 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .left-side {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .right-side {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
