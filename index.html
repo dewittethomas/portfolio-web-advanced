@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas Dewitte</title>
     <link rel="stylesheet" href="styles/main.css"></style>
-    
 </head>
 <body>
     <header>
@@ -16,45 +15,54 @@
         </div>
         <div class="right-side">
             <a id="temperature"></a>
-            <img id="icon" src="" alt="Weather Condition Icon">
+            <img id="icon" loading="lazy">
         </div>
     </header>
 
     <main>
         <article>
-            <h2>Card Title</h2>
-            <p>Description</p>
-            <span class="see-more"><b>See more</b><img src="images/arrow-right.svg"></span>
+            <h2>What's Your Name?</h2>
+            <p>
+                Dive into personalized adventures! Enter your name to unlock tailored content and experiences throughout the website. 
+                Your journey starts now!
+            </p>
+            <span class="see-more" onclick="window.location.href = 'what-name.html';"><b>See more</b><img src="images/arrow-right.svg" loading="lazy"></span>
+        </article>
+
+        <article>
+            <h2>Discover Your Name.</h2>
+            <p>
+                Unveil personalized magic! Your name reveals customized surprises and messages, shaping your online experience. 
+                Explore the power of personalization!
+            </p>
+            <span class="see-more" onclick="window.location.href = 'discover-name.html';"><b>See more</b><img src="images/arrow-right.svg" loading="lazy"></span>
         </article>
 
         <article>
             <h2>Card Title</h2>
             <p>Description</p>
+            <span class="see-more"><b>See more</b><img src="images/arrow-right.svg" loading="lazy"></span>
         </article>
 
         <article>
             <h2>Card Title</h2>
             <p>Description</p>
+            <span class="see-more"><b>See more</b><img src="images/arrow-right.svg" loading="lazy"></span>
         </article>
 
         <article>
             <h2>Card Title</h2>
             <p>Description</p>
+            <span class="see-more"><b>See more</b><img src="images/arrow-right.svg" loading="lazy"></span>
         </article>
 
         <article>
             <h2>Card Title</h2>
             <p>Description</p>
+            <span class="see-more"><b>See more</b><img src="images/arrow-right.svg" loading="lazy"></span>
         </article>
-
-        <article>
-            <h2>Card Title</h2>
-            <p>Description</p>
-        </article>
-
-
     </main>
 
-    <script src="scripts/weather.js"></script>
+    <script src="scripts/weather.js" defer></script>
 </body>
 </html>
