@@ -20,17 +20,17 @@ async function fetchWeather() {
     temperature_element.innerText = temperature + " °C";
 
     if (sunny.includes(code)) {
-        src = "images/sunny.svg";
+        src = "/images/sunny.svg";
     } else if (cloudy.includes(code)) {
-        src = "images/cloudy.svg";
+        src = "/images/cloudy.svg";
     } else if (partly_cloudy.includes(code)) {
-        src = "images/partly-cloudy.svg"
+        src = "/images/partly-cloudy.svg"
     } else if (rain.includes(code)) {
-        src = "images/rain.svg";
+        src = "/images/rain.svg";
     } else if (snow.includes(code)) {
-        src = "images/snow.svg";
+        src = "/images/snow.svg";
     } else if (thundery.includes(code)) {
-        src = "images/thundery.svg";
+        src = "/images/thundery.svg";
     }
 
     weather_icon.src = src;
