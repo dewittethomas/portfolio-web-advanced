@@ -9,16 +9,18 @@
 /* General */
 
 body {
+    color: var(--white);
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--white)
 }
 
 /* Navigation */
 
 header {
-    background-color: var(--blue);
     color: var(--white);
+    background-color: var(--blue);
+    height: 80px;
     padding: 1rem 1rem 1rem;
+    border-bottom: 1px solid var(--dark-grey);
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -85,18 +87,18 @@ img {
 /* Main */
 
 main {
+    color: var(--black);
     max-width: 1200px;
     margin: 40px auto;
-    color: var(--black);
     display: flex;
     flex-wrap: wrap;
 }
 
 main article {
+    background-color: var(--blue);
     height: 220px;
     padding: 1rem;
     margin: 0.5rem;
-    background-color: var(--blue);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -104,7 +106,8 @@ main article {
     flex-basis: calc(50% - 1rem);
 }
 
-article h2 {
+article h2, p {
+    color: var(--white);
     margin: 1rem 0;
 }
 
@@ -127,6 +130,30 @@ article h2 {
     margin: 0 0.4rem;
 }
 
+.form {
+    justify-content: space-between;
+}
+
 .title {
-    display: block;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container input, button {
+    margin-bottom: 2rem;
+    border: 1px solid var(--dark-grey);
+    border-radius: 9px;
+
+}
+
+.input-container button {
+    background-color: var(--blue);
+    color: var(--white);
 }
