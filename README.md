@@ -7,6 +7,7 @@ A Portfolio Website for my School Subject called "Web Advanced". Built with HTML
 - [Features](#features)
     - [Responsiveness](#responsiveness)
     - [Weather Station](#weather-station)
+    - [Username](#username)
 
 ## Requirements
 
@@ -63,3 +64,11 @@ By this feature the following requirements can be checked off the list:
 - [x] Async & Await
 - [x] Fetching Data
 - [x] Basic CSS Animation
+
+### Username
+
+There is also a "What's Your Name?" form added, where users can input their name. When submitted, this name or "username" is saved to the LocalStorage. The form has validation to ensure that a name is entered before submission. Additionally, there is a "Discover Your Name" page where users can see the stored name displayed dynamically.
+
+By this feature the following requirements can be checked off the list:
+
+- [x] Using LocalStorage

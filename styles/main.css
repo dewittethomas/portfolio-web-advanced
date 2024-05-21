@@ -13,6 +13,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.hidden {
+    display: none !important;
+}
+
 /* Navigation */
 
 header {
@@ -116,10 +120,37 @@ img {
     margin: 0.5rem 0.5rem;
 }
 
+.status {
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: solid var(--grey) 2px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.status p {
+    line-height: 1.5rem;
+}
+
+.status p a {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.success {
+    background-color: var(--green);
+}
+
+.fail {
+    background-color: var(--red);
+}
+
 .form-container {
     max-width: 600px;
     margin: 2rem auto;
     padding: 2rem;
+    border: solid var(--grey) 2px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

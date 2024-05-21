@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     const name = localStorage.getItem('username');
+    const username = document.querySelector('.input-container .username');
     
     if (name) {
-        const usernameElement = document.querySelector('.input-container .username');
-        usernameElement.textContent = name;
+        username.textContent = name;
     } else {
-        alert('No name found in localStorage.');
+        username.textContent = "Not Found";
     }
 });
