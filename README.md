@@ -1,17 +1,19 @@
 # Portfolio Web Advanced
 
-A Portfolio Website for my School Subject called "Web Advanced". Built with HTML, CSS and JavaScript.
+This is a Portfolio Website for my school subject "Web Advanced," built with HTML, CSS, and JavaScript.
 
 ## Table of Contents
 - [Requirements](#requirements)
 - [Features](#features)
     - [Responsiveness](#responsiveness)
+    - [Title](#title)
     - [Weather Station](#weather-station)
-    - [Username](#username)
+    - [Name](#name)
+    - [Bitcoin Price](#bitcoin-price)
 
 ## Requirements
 
-On the website there needed to be multiple elements implemented and displayed on the website, these were the following:
+The website needed to incorporate multiple elements and functionalities, including:
 
 - Selecting Elements
 - Manipulating Elements
@@ -38,16 +40,23 @@ On the website there needed to be multiple elements implemented and displayed on
 
 ### Responsiveness
 
-For the website to be compatible with every device I used Flexbox, which was a very good solution for me.
+To ensure the website is compatible with all devices, I utilized Flexbox. This approach helped create a responsive and adaptable layout.
 
-By this feature the following requirements can be checked off the list:
+This feature demonstrates:
 
 - [x] Using Flexbox or CSS Grid
 
+### Title
+
+The header displays my name, which features a CSS animation on hover.
+
+This feature demonstrates:
+
+- [x] Basic CSS Animation
+
 ### Weather Station
 
-Also a Weather Station is implemented in the header. As the location for which I wanted to know the weather, I used Anderlecht which is where my school is located.
-The temperature is shown in degrees Celsius, and I also added an animated icon to indicate the following weather conditions:
+A Weather Station is implemented in the header. The weather information is based on Anderlecht, where my school is located. The temperature is shown in degrees Celsius, and animated icons represent different weather conditions:
 
 - Sunny
 - Cloudy
@@ -56,19 +65,35 @@ The temperature is shown in degrees Celsius, and I also added an animated icon t
 - Snowy
 - Thundery
 
-By this feature the following requirements can be checked off the list:
+This feature demonstrates:
 
 - [x] Selecting Elements
 - [x] Manipulating Elements
 - [x] Iterating over an Array
 - [x] Async & Await
 - [x] Fetching Data
-- [x] Basic CSS Animation
+- [x] Self-Executing Function
 
-### Username
+### Name
 
-There is also a "What's Your Name?" form added, where users can input their name. When submitted, this name or "username" is saved to the LocalStorage. The form has validation to ensure that a name is entered before submission. Additionally, there is a "Discover Your Name" page where users can see the stored name displayed dynamically.
+A "What's Your Name?" page allows users to input their name, which is then saved to LocalStorage. The form includes validation to ensure a name is entered before submission. Additionally, a "Discover Your Name" page displays the stored name dynamically.
 
-By this feature the following requirements can be checked off the list:
+This feature demonstrates:
 
 - [x] Using LocalStorage
+- [x] Attaching Event to an Element
+- [x] Form Validation
+- [x] Using Template Literals
+
+
+### Bitcoin Price
+
+The "Bitcoin Price" page fetches and displays the current price of Bitcoin in Euros (EUR). This feature leverages modern JavaScript functionalities like Promises and Fetch API to retrieve real-time data from the CoinDesk API.
+
+When the page loads, it sends a request to the CoinDesk API to get the latest Bitcoin price. The fetched data is then parsed and displayed on the page. The implementation includes error handling to manage any issues that may arise during the data fetching process.
+
+This feature demonstrates:
+
+- [x] Consumer Methods
+- [x] Using a Constant
+- [x] Using Template Literals

@@ -148,7 +148,7 @@ img {
 
 .form-container {
     max-width: 600px;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     padding: 2rem;
     border: solid var(--grey) 2px;
     border-radius: 10px;
@@ -164,17 +164,25 @@ img {
 }
 
 .input-container {
+    margin: 0.5rem 0;
     display: flex;
     flex-direction: column;
 }
 
 .input-container input {
-    margin: 0.75rem 0;
+    margin: 1rem 0;
     padding: 0.75rem;
     border: 1px solid var(--dark-grey);
     border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
+}
+
+.input-container label {
+    color: var(--black);
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0 0;
+
 }
 
 .input-container input:focus {
@@ -184,20 +192,11 @@ img {
 .input-container button, .input-container p {
     color: var(--white);
     background-color: var(--blue);
-    margin: 0.75rem 0;
+    margin: 1rem 0;
     padding: 0.75rem;
     font-size: 1.2rem;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
-}
-
-.username {
-    color: var(--white);
-    background: var(--blue);
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 0.75rem;
     border-radius: 5px;
 }
 
@@ -217,10 +216,6 @@ img {
     }
 
     .name:hover::before {
-        width: 0%;
-    }
-
-    .see-more b:hover::before {
         width: 0%;
     }
 }

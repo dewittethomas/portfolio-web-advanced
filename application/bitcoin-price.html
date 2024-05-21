@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What's Your Name?</title>
-    <link rel="stylesheet" href="/styles/main.css">
+    <title>What's The Current Bitcoin Price?</title>
+    <link rel="stylesheet" href="/styles/main.css"></style>
 </head>
 <body>
     <header>
@@ -20,20 +20,15 @@
     </header>
 
     <main>
-        <div class="status hidden">
-            <p id="status-message"></p>
-            <p id="discover" class="hidden">Discover Your Name <a href="/application/discover-name.html">Here</a></p>
-        </div>
         <div class="form-container">
-            <h2 class="title">What's Your Name?</h2>
+            <h2 class="title">What's The Current Bitcoin Price?</h2>
             <div class="input-container">
-                <input type="text" id="username" name="name">
-                <button type="submit" id="submit">Send</button>
+                <p id="bitcoin"></p>
             </div>
         </div>
     </main>
 
     <script src="/scripts/weather.js" defer></script>
-    <script src="/scripts/set-username.js" defer></script>
+    <script src="/scripts/get-bitcoin.js" defer></script>
 </body>
 </html>

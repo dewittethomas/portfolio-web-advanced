@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('username', name);
             status.classList.remove('hidden');
             status.classList.add('success');
-            message.textContent = 'Your name' + ' "' + name + '" ' + 'has been saved in the system.';
+            message.textContent = `Your name "${name}" has been saved in the system.`;
             discover.classList.remove('hidden');
         } else {
             status.classList.remove('hidden');
