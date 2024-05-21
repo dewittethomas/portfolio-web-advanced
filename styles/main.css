@@ -133,17 +133,17 @@ img {
     line-height: 1.5rem;
 }
 
-.status p a {
-    color: var(--blue);
-    text-decoration: underline;
-}
-
 .success {
     background-color: var(--green);
 }
 
 .fail {
     background-color: var(--red);
+}
+
+#discover a {
+    color: var(--blue);
+    text-decoration: underline;
 }
 
 .form-container {
@@ -169,6 +169,13 @@ img {
     flex-direction: column;
 }
 
+.input-container label {
+    color: var(--black);
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0 0;
+
+}
+
 .input-container input {
     margin: 1rem 0;
     padding: 0.75rem;
@@ -176,13 +183,6 @@ img {
     border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
-}
-
-.input-container label {
-    color: var(--black);
-    font-size: 1.2rem;
-    margin: 0.5rem 0 0 0;
-
 }
 
 .input-container input:focus {
@@ -198,6 +198,15 @@ img {
     cursor: pointer;
     border: none;
     border-radius: 5px;
+}
+
+.input-container p {
+    display: flex;
+    flex-direction: column;
+}
+
+#gender {
+    text-transform: capitalize;
 }
 
 @media screen and (max-width: 1220px) {

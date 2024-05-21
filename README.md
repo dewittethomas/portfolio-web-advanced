@@ -57,7 +57,7 @@ This feature demonstrates:
 
 ### Weather Station
 
-A Weather Station is implemented in the header. The weather information is based on Anderlecht, where my school is located. The temperature is shown in degrees Celsius, and animated icons represent different weather conditions:
+A Weather Station is shown in the header when page loads. The weather information is based on Anderlecht, where my school is located. Also the temperature is shown in degrees Celsius, and animated icons represent different weather conditions:
 
 - Sunny
 - Cloudy
@@ -89,7 +89,7 @@ This feature demonstrates:
 
 ### Bitcoin Price
 
-The "Bitcoin Price" page fetches and displays the current price of Bitcoin in Euros (EUR). This feature leverages modern JavaScript functionalities like Promises and Fetch API to retrieve real-time data from the CoinDesk API.
+The "Bitcoin Price" page fetches and displays the current price of Bitcoin in Euros (EUR).
 
 When the page loads, it sends a request to the CoinDesk API to get the latest Bitcoin price. The fetched data is then parsed and displayed on the page. The implementation includes error handling to manage any issues that may arise during the data fetching process.
 
@@ -106,3 +106,4 @@ The "Calculator" page allows users to input three numbers and quickly calculate 
 This feature demonstrates:
 
 - [x] Spread & Rest Operator
+- [x] Arrow Function

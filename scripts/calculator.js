@@ -1,4 +1,4 @@
-function sum(a, b, c) {
+const sum = function(a, b, c) {
     return a + b + c;
 }
 
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             status.classList.remove('hidden');
             status.classList.add('fail');
-            message.textContent = 'Fill in all fields before calculating.';
+            message.textContent = 'Fill in all fields correctly before calculating.';
         }
     });
 });
