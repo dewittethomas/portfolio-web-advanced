@@ -10,6 +10,7 @@ This is a Portfolio Website for my school subject "Web Advanced," built with HTM
     - [Weather Station](#weather-station)
     - [Name](#name)
     - [Bitcoin Price](#bitcoin-price)
+    - [Calculator](#calculator)
 
 ## Requirements
 
@@ -97,3 +98,11 @@ This feature demonstrates:
 - [x] Consumer Methods
 - [x] Using a Constant
 - [x] Using Template Literals
+
+### Calculator
+
+The "Calculator" page allows users to input three numbers and quickly calculate their sum. Upon entering the numbers and clicking the "Add up" button, the script processes the input and displays the result.
+
+This feature demonstrates:
+
+- [x] Spread & Rest Operator
