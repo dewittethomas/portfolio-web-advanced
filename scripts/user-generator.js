@@ -5,8 +5,11 @@ function fetchData() {
             return response.json();
         })
         .then(data => {
-        resolve(data);
+            resolve(data);
         })
+        .catch(error => {
+            reject(error);
+        });
     });
 }
 
@@ -17,6 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const age = document.getElementById('age');
     const country = document.getElementById('country');
     const email = document.getElementById('email');
+    const container = document.querySelector('.input-container');
+    const status = document.querySelector('.status');
+    const message = document.getElementById('status-message');
+
+    status.classList.remove('fail');
 
     fetchData()
         .then(data => {
@@ -28,4 +36,10 @@ document.addEventListener('DOMContentLoaded', function() {
             email.textContent = data['results'][0]['email'];
             console.log(data['results'][0]);
         })
+        .catch(error => {
+            container.classList.add('hidden');
+            status.classList.remove('hidden');
+            status.classList.add('fail');
+            message.textContent = 'Something went wrong.';
+        });
 });
