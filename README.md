@@ -113,7 +113,7 @@ This feature demonstrates:
 
 ### Random User Generator
 
-The "Random User Generator" page fetches and displays random user profiles (from an API), which include details such as names, emails, and more. This feature allows you to generate diverse user data with a single click, providing lifelike personas for testing or placeholder content.
+The "Random User Generator" page fetches and displays random user profiles (with data destructured from an API), which include details such as names, emails, and more. This feature allows you to generate diverse user data with a single click, providing lifelike personas for testing or placeholder content. The implementation includes error handling to manage any issues that may arise during the data fetching process, using promises.
 
 This feature demonstrates:
 
