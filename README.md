@@ -11,6 +11,8 @@ This is a Portfolio Website for my school subject "Web Advanced," built with HTM
     - [Name](#name)
     - [Bitcoin Price](#bitcoin-price)
     - [Calculator](#calculator)
+    - [Random User Generator](#random-user-generator)
+    - [Leap Year](#leap-year)
 
 ## Requirements
 
@@ -49,7 +51,7 @@ This feature demonstrates:
 
 ### Title
 
-The header displays my name, which features a CSS animation on hover.
+The header displays my name "Thomas Dewitte", which features a CSS animation on hover.
 
 This feature demonstrates:
 
@@ -57,7 +59,7 @@ This feature demonstrates:
 
 ### Weather Station
 
-A Weather Station is shown in the header when page loads. The weather information is based on Anderlecht, where my school is located. Also the temperature is shown in degrees Celsius, and animated icons represent different weather conditions:
+A Weather Station is shown in the header when the page loads. The weather information is based on Anderlecht, where my school is located, and is fetched from a Weather API using an asynchronous function. The temperature is shown in degrees Celsius, and animated icons represent different weather conditions:
 
 - Sunny
 - Cloudy
@@ -74,10 +76,11 @@ This feature demonstrates:
 - [x] Async & Await
 - [x] Fetching Data
 - [x] Self-Executing Function
+- [x] Basic CSS Animation
 
 ### Name
 
-A "What's Your Name?" page allows users to input their name, which is then saved to LocalStorage. The form includes validation to ensure a name is entered before submission. Additionally, a "Discover Your Name" page displays the stored name dynamically.
+A "What's Your Name?" page allows users to input their name, which is then saved to LocalStorage. The form includes validation to ensure a name is entered before submission (which is executed by clicking the submit-button). Additionally, a "Discover Your Name" page displays the stored name dynamically.
 
 This feature demonstrates:
 
@@ -86,24 +89,43 @@ This feature demonstrates:
 - [x] Form Validation
 - [x] Using Template Literals
 
-
 ### Bitcoin Price
 
 The "Bitcoin Price" page fetches and displays the current price of Bitcoin in Euros (EUR).
 
-When the page loads, it sends a request to the CoinDesk API to get the latest Bitcoin price. The fetched data is then parsed and displayed on the page. The implementation includes error handling to manage any issues that may arise during the data fetching process.
+When the page loads, it sends a request to the CoinDesk API to get the latest Bitcoin price. The fetched data is then parsed and displayed on the page. The implementation includes error handling to manage any issues that may arise during the data fetching process, using consumer methods.
 
 This feature demonstrates:
 
 - [x] Consumer Methods
 - [x] Using a Constant
 - [x] Using Template Literals
+- [x] Fetching Data
 
 ### Calculator
 
-The "Calculator" page allows users to input three numbers and quickly calculate their sum. Upon entering the numbers and clicking the "Add up" button, the script processes the input and displays the result.
+The "Calculator" page allows users to input three numbers and quickly calculate their sum, using the Spread & Rest Operator. Upon entering the numbers and clicking the "Add up" button, the script processes the input and displays the result.
 
 This feature demonstrates:
 
 - [x] Spread & Rest Operator
 - [x] Arrow Function
+
+### Random User Generator
+
+The "Random User Generator" page fetches and displays random user profiles (from an API), which include details such as names, emails, and more. This feature allows you to generate diverse user data with a single click, providing lifelike personas for testing or placeholder content.
+
+This feature demonstrates:
+
+- [x] Promise
+- [x] Destructuring
+- [x] Fetching Data
+
+### Leap Year
+
+The "Leap Year" page allows users to input a year and determine if it is a leap year. Upon entering the year and clicking the "Verify" button, the script processes the input with a callback function that checks the leap year criteria and displays the result.
+
+This feature demonstrates:
+
+- [x] Callback Function
+- [x] Using Template Literals

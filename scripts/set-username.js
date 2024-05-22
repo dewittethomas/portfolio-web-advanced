@@ -3,20 +3,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const submit = document.getElementById('submit');
     const status = document.querySelector('.status');
     const message = document.getElementById('status-message');
-    const discover = document.getElementById('discover');
+    const recommended = document.getElementById('recommended');
+
+
 
     submit.addEventListener('click', function() {
         const name = username.value;
 
         status.classList.remove('success', 'fail');
-        discover.classList.add('hidden');
+        recommended.classList.add('hidden');
 
         if (name) {
             localStorage.setItem('username', name);
             status.classList.remove('hidden');
             status.classList.add('success');
             message.textContent = `Your name "${name}" has been saved in the system.`;
-            discover.classList.remove('hidden');
+            recommended.innerHTML = 'Discover Your Name <a href="/application/discover-name.html">Here</a>';
+            recommended.classList.remove('hidden');
         } else {
             status.classList.remove('hidden');
             status.classList.add('fail');

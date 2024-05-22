@@ -4,13 +4,13 @@ const sum = function(a, b, c) {
 
 document.addEventListener('DOMContentLoaded', function() {
     const submit = document.getElementById('submit');
+    const status = document.querySelector('.status');
+    const message = document.getElementById('status-message');
 
     submit.addEventListener('click', function() {
         const num1 = parseFloat(document.getElementById('number1').value);
         const num2 = parseFloat(document.getElementById('number2').value);
         const num3 = parseFloat(document.getElementById('number3').value);
-        const status = document.querySelector('.status');
-        const message = document.getElementById('status-message');
 
         status.classList.remove('success', 'fail');
 
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             status.classList.remove('hidden');
             status.classList.add('success');
-            message.textContent = `The result of your calculation is: ${result}`;
+            message.textContent = `The result of your sum is: ${result}`;
         } else {
             status.classList.remove('hidden');
             status.classList.add('fail');
